@@ -1,6 +1,6 @@
-# bootstrap4-gulp-nunjucks
+# patternLibraryWorkFlow
 
-This is the front-end development kit for use with [Bootstrap 4](http://v4-alpha.getbootstrap.com/). It has a Gulp-powered build system with these features:
+This is the front-end development kit for use with [Bootstrap 4] It has a Gulp-powered build system with these features:
 
 - Nunjucks HTML templates
 - Sass compilation and prefixing (with libsass)
@@ -27,12 +27,12 @@ To manually set up the template, first download it with npm or git:
 #### from npm
 ```bash
 npm init
-npm install bootstrap4-gulp-nunjucks --save-dev
+npm install patternLibraryWorkFlow --save-dev
 ```
 
 #### from github
 ```bash
-git clone https://github.com/directions4/bootstrap4-gulp-nunjucks projectname
+git clone https://github.com/10ryanna01/patternlibraryworkflow projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:

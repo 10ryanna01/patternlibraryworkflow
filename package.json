@@ -1,7 +1,7 @@
 {
-  "name": "patternlibraryworkflows",
+  "name": "patternLibraryWorkFlow",
   "version": "2.0.2",
-  "description": "Template for a patternlibraryworkflow",
+  "description": "Template for a patternLibraryWorkFlow",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
