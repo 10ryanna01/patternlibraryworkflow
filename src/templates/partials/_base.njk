@@ -10,17 +10,20 @@
   </head>
   <body>
     {% block header %}
-      {% include '_header.njk' %}
+      {% include './_header.njk' %}
     {% endblock header %}
     <main role="main">
       {% block content %}{% endblock content %}
     </main>
     {% block footer %}
-      {% include '_footer.njk' %}
+      {% include './_footer.njk' %}
     {% endblock footer %}
 
     {% block javascripts %}
-      <script src="{{roo}}js/bootstrap.bundle.min.js"></script>
+      <script src="{{root}}js/jquery.slim.min.js"></script>
+      <script src="{{root}}js/popper.min.js"></script>
+      <script src="{{root}}js/bootstrap.bundle.min.js"></script>
+    
     {% endblock %}
   </body>
 </html>

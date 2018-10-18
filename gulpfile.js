@@ -80,7 +80,12 @@ gulp.task("copy:img", function() {
 });
 
 gulp.task("copy:js", function() {
-  return gulp.src("node_modules/bootstrap/dist/js/**/*.js").pipe(gulp.dest(paths.dist + "js"));
+  return gulp.src([
+    "node_modules/bootstrap/dist/js/**/*.js",
+    "node_modules/popper.js/dist/umd/**/*.js",
+    "node_modules/jquery/dist/**/*.js"
+  ])
+  .pipe(gulp.dest(paths.dist + "js"));
 });
 
 gulp.task("pages", function() {
