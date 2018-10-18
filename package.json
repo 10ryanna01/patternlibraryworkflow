@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap4-gulp-nunjucks",
+  "name": "patternlibraryworkflows",
   "version": "2.0.2",
-  "description": "Template for Bootstrap 4.",
+  "description": "Template for a patternlibraryworkflow",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
