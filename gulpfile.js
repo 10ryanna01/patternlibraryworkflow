@@ -26,7 +26,11 @@ var paths = gulp.paths;
 gulp.task("serve", ["build"], function() {
   browserSync.init({
     server: paths.dist,
+
   });
+  gulp.watch(paths.src + "assets/scss/**/*.scss");
+  gulp.watch(paths.src + "styles/**/*.scss", ["bs-reload"]);
+  
 });
 
 gulp.task("bs-reload", function() {
@@ -114,7 +118,8 @@ gulp.task("build", function(callback) {
 
 gulp.task("default", ["serve"], function() {
   gulp.watch(paths.dist + "**/*.*", ["bs-reload"]);
-  gulp.watch(paths.src + "styles/**/*.scss", ["sass"]);
+  gulp.watch(paths.src + "assets/**/*.scss", ["sass"]);
+  gulp.watch(paths.src + "assets/**/*.scss", ["bs-reload"]);
   gulp.watch(paths.src + "templates/**/*.njk", ["pages"]);
   gulp.watch(paths.src + "javascripts/**/*.js", ["copy:js"]);
 });
